@@ -6,6 +6,8 @@ const contactRoutes =require('./routes/contactRoutes');
 const path = require('path');
 require("dotenv").config();
 
+const app = express();
+
 
 const port = process.env.PORT;
 
@@ -16,7 +18,7 @@ if(process.env.NODE_ENV === 'production'){
 	});
 }
 
-const app = express();
+
 //database connection
 connect();
 //middlewares

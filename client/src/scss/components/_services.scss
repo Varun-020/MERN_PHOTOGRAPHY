@@ -1,0 +1,116 @@
+.services{
+    padding-top: 10rem;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 2rem;
+    
+    .container2{
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    .section-heading{
+        font-size: clamp(2rem, 10vw,8rem);
+        text-transform: uppercase;
+        font-family: "Monsterart",sans-serif;
+        letter-spacing: .2rem;
+        text-align: center;
+        position: relative;
+        margin-bottom: 5rem;
+        
+        
+    }
+
+    .service-all-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .service-item{
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: 0.3s ease background-color;
+            
+        }        
+    }
+}
+.service-item-heading{
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 2.5rem;
+
+}
+.service-description{
+    color:#48468b;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+}
+.service-icon{
+    width: 50px;
+    height: 50px;
+    padding: .8rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    
+}
+.service-item:nth-child(1) .icon{
+    background-color: rgb(119, 12, 241);
+}
+.service-item:nth-child(2) .icon{
+    background-color: rgba(0,255,115,0.151);
+}
+.service-item:nth-child(3) .icon{
+    background-color: #cbbef0;
+}
+.service-item:nth-child(1):hover{
+    background-color: rgb(132, 183, 187);
+}
+.service-item:nth-child(2):hover{
+    background-color: rgba(0,255,115,0.151);
+}
+.service-item:nth-child(3):hover{
+    background-color: #cbbef0;
+}
+.section-heading::before{
+    content:"services";
+    position: absolute;
+    top: -12%;
+    left: 1%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Monsterart",sans-serif;
+    letter-spacing: .2rem;
+    color:transparent;
+    -webkit-text-stroke: 1.5px #f8c3ead2;
+    z-index: -1;
+}
+
+//responsiveness
+@media only screen and (max-width:768px){
+    .services{
+        padding-top: 35rem;
+        margin-bottom: 3rem;
+    }
+    .service-all-items{
+        flex-direction: column;
+        text-align: center;
+    }
+    .section-icon{
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    .service-item{
+        margin:2rem 0;
+
+    }
+    .service-item:nth-child(1){
+        background-color: rgb(132, 183, 187);
+    }
+    .service-item:nth-child(2){
+        background-color: rgba(0,255,115,0.151);
+    }
+    .service-item:nth-child(3){
+        background-color: #cbbef0;
+    }
+}

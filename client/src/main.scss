@@ -1,0 +1,26 @@
+@import './scss/abstracts/variable';
+@import './scss/abstracts/mixins';
+@import './scss/abstracts/extends';
+@import './scss/utils/utils';
+@import './scss//layout/grid';
+@import './scss/base/reset';
+
+//mixins
+
+
+
+//components
+@import './scss/components/Navbar';
+@import './scss/components/bgimage';
+@import './scss/components/accounts';
+@import './scss/components/notFound';
+@import './scss/components/bookingbar';
+@import './scss/components/loader';
+@import './scss/components/home';
+@import './scss/components/services';
+@import './scss/components/testimonial';
+@import './scss/components/about';
+@import './scss/components/gallery';
+@import './scss/components/showcase';
+@import './scss/components/offer';
+@import './scss/components/footer';

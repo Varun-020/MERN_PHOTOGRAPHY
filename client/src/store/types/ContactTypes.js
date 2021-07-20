@@ -1,0 +1,10 @@
+export const SET_MESSAGE = 'SET_MESSAGE';
+export const REMOVE_MESSAGE =  'REMOVE_MESSAGE';
+export const SET_LOADER = 'SET_LOADER';
+export const CLOSE_LOADER = 'CLOSE_LOADER';
+export const CONTACT_ERROR ='CONTACT_ERROR';
+export const  BOOKING_ERROR='BOOKING_ERROR';
+export const  SET_IMAGE='SET_IMAGE';
+export const SET_OFFER = 'SET_OFFER';
+export const SET_OFFER_MESSAGE = 'SET_OFFER_MESSAGE';
+export const REMOVE_OFFER_MESSAGE = 'REMOVE_OFFER_MESSAGE';

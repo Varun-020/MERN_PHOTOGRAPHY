@@ -1,0 +1,11 @@
+.account{
+    height: calc(100vh - 5rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__section{
+        width:70%;
+
+    }
+}

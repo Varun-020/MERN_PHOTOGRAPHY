@@ -1,0 +1,115 @@
+.testimonial{
+    padding:15rem 0;
+    overflow-x: hidden;
+}
+.container3{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+
+}
+.all-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+.testimonial-heading{
+    font-size: clamp(2rem, 10vw,8rem);
+    text-transform: uppercase;
+    font-family: "Monsterart",sans-serif;
+    letter-spacing: .2rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.testimonial-heading::before{
+    content:"testimonials";
+    position: absolute;
+    top: -12%;
+    left: 1%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Monsterart",sans-serif;
+    letter-spacing: .2rem;
+    color:transparent;
+    -webkit-text-stroke: 1.5px #f8c3ead2;
+    z-index: -1;
+}
+.testimonial-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin:0 auto;
+    margin-bottom: 2rem;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.item{
+    text-align: center;
+    position: relative;
+    padding:20px;
+}
+.testimonial-heading1{
+    font-size: 2.4rem;
+    font-family: 'Monsterart',sans-serif;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+.testimonial-subheading{
+    font-size: 1.6rem;
+    color: rgb(13, 182, 173);
+    margin-bottom: 1.1rem;
+}
+.testimonial-description{
+    color:#45bc
+}
+.icon{
+    max-width: 25px;
+    margin:1.5rem auto;
+    color:blue;
+    opacity: 0.5;
+}
+@media only screen and (max-width:950px){
+    .testimonial{
+        padding-top: 35rem;
+    }
+    .all-items{
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+        gap:50px;
+    }
+
+}
+.item:nth-child(1),.item:nth-child(3){
+    flex:3;
+    transform: scale(0.8);
+}
+.item:nth-child(2){
+    flex:4
+}
+.item::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 45px;
+    z-index: -1;
+    box-shadow: 0px 0px 20px 0px #d5a2f7;
+}
+.item:nth-child(2)::after{
+    transform: skew(350deg,354deg);
+    border-radius: 26px 67px 35px 67px;
+    height: 100%;
+}
+.item:nth-child(1)::after,.item:nth-child(3)::after{
+    transform: skew(20deg 90deg) !important;
+    border-radius: 67px 35px 67px 26px;
+    height: 100%;
+}

@@ -13,7 +13,7 @@ const port = process.env.PORT;
 
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static(path.join(__dirname,'/client/build/')));
-    app.get('*', (req, res) => {
+    app.get('/', (req, res) => {
 		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 	});
 }
@@ -31,10 +31,6 @@ app.use('/',uploadRoutes);
 app.use('/',contactRoutes);
 
 
-
-app.get("/",(req,res)=>{
-    res.send("index.html")
-});
 
 app.listen(port,()=>{
     console.log(`App is running in port : ${port}`);

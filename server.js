@@ -32,9 +32,9 @@ app.use('/',contactRoutes);
 
 
 
-// app.get("/",(req,res)=>{
-//     res.send("this is a homepage")
-// });
+app.get("/",(req,res)=>{
+    res.send("index.html")
+});
 
 app.listen(port,()=>{
     console.log(`App is running in port : ${port}`);
